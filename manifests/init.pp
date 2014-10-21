@@ -1,9 +1,6 @@
 # == Class: ejabberd
 #
 class ejabberd (
-  $package_name     = $ejabberd::params::package_name,
-  $service_name     = $ejabberd::params::service_name,
-  $config_file      = $ejabberd::params::config_file,
   $admin            = $ejabberd::params::admin,
   $hostname         = $ejabberd::params::hostname,
   $watchdog_admins  = $ejabberd::params::watchdog_admins,
