@@ -1,11 +1,5 @@
 
 ---
-install:
-  - sudo apt-get update
-  - sudo apt-get -y install virtualbox
-  - wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
-  - sudo dpkg -i vagrant_*.deb
-  - bundle install
 language: ruby
 bundler_args: --without development
 before_install: rm Gemfile.lock || true
@@ -15,7 +9,7 @@ rvm:
   - 2.0.0
   - 2.1.0
   - ruby-head
-script: bundle exec rake acceptance
+script: bundle exec rake test
 env:
   - PUPPET_VERSION="~> 2.7.0"
   - PUPPET_VERSION="~> 3.1.0"
