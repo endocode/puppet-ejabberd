@@ -11,8 +11,9 @@ rvm:
 install:
   - sudo apt-get update
   - sudo apt-get -y install virtualbox
+  - sudo apt-get -y install vagrant
 
-script: bundle exec rake test
+script: bundle exec rake acceptance
 env:
 #  - PUPPET_VERSION="~> 2.7.0"
 #  - PUPPET_VERSION="~> 3.1.0"
