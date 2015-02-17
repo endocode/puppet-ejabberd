@@ -8,7 +8,7 @@ rvm:
   - 2.0.0
   - 2.1.0
   - ruby-head
-  install:
+install:
   - sudo echo "deb http://download.virtualbox.org/virtualbox/debian precise contrib" | sudo tee -a /etc/apt/sources.list
   - wget http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
   - sudo apt-get update
