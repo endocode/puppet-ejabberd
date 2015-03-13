@@ -25,3 +25,14 @@ Usage:
         ldap_password   => 'password',
         ldap_base       => 'dc=example,dc=org',
     }
+
+##Testing
+
+run rspec tests: `bundle exec rake test`
+
+run acceptance tests: `bundle exec rake acceptance`
+
+###Vagrant
+
+running `vagrant up` creates a debian wheezy and ubuntu trusty box.
+`vagrant up ubuntu` or `vagrant up debian` will run only the specified box.
