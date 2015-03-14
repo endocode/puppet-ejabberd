@@ -21,6 +21,19 @@ describe 'ejabberd class' do
     describe service('ejabberd') do
       it { should be_enabled }
       it { should be_running }
+
+      it "should listen on port 5222" do
+        result = shell( 'netstat -tulpn | grep 5222 | wc -l' )
+        expect(result.stdout).to match(/1/)
+      end
+    end
+
+    describe user('ejabberd') do
+       it { should exist }
+    end
+
+    describe file('/etc/ejabberd/ejabberd.cfg') do
+      it { should contain 'localhost' }
     end
   end
 end
