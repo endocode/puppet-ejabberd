@@ -1,9 +1,9 @@
 HOSTS:
-  ubuntu-1404-x64:
+  debian-7-x64:
     roles:
       - default
-    platform: ubuntu-1404-x86_64
-    box: puppetlabs/ubuntu-14.04-64-nocm
+    platform: debian-7-x86_64
+    box: 'puppetlabs/debian-7.8-64-nocm'
     hypervisor: vagrant
 CONFIG:
   log_level: verbose

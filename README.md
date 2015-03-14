@@ -36,3 +36,8 @@ run acceptance tests: `bundle exec rake acceptance`
 
 running `vagrant up` creates a debian wheezy and ubuntu trusty box.
 `vagrant up ubuntu` or `vagrant up debian` will run only the specified box.
+
+## Requirements
+
+ruby > 1.9.0
+puppet > 3.0
