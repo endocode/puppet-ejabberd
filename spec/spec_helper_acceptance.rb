@@ -2,8 +2,12 @@ require 'beaker-rspec/spec_helper'
 require 'beaker-rspec/helpers/serverspec'
 
 hosts.each do |host|
-  # Install Puppet
-  install_puppet
+  if host['box'] =~ /-puppet/
+    # Puppet already installed
+  else
+  # Install Puppet 3.x on any other OS
+    install_puppet
+  end
 end
 
 RSpec.configure do |c|

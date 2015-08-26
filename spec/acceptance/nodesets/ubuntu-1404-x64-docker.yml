@@ -1,5 +1,5 @@
 HOSTS:
-  docker-ubuntu-1404-x64:
+  ubuntu-1404-x64-docker:
     roles:
       -master
     platform: ubuntu-14.04-x64
