@@ -6,6 +6,8 @@ HOSTS:
     image: debian:7
     hypervisor: docker
     docker_preserve_image: true
+    docker_image_commands:
+      - apt-get install -y wget net-tools
 CONFIG:
   log_level: verbose
   type: foss
