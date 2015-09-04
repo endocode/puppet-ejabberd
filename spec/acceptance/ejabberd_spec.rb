@@ -22,10 +22,10 @@ describe 'ejabberd class' do
       it { should be_enabled }
       it { should be_running }
 
-      it "should listen on port 5222" do
-        result = shell( 'netstat -tulpn | grep 5222 | wc -l' )
-        expect(result.stdout).to match(/1/)
+      describe port(5222) do
+        it { is_expected.to be_listening }
       end
+
     end
 
     describe user('ejabberd') do
