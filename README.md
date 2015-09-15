@@ -31,6 +31,7 @@ Usage:
 run rspec tests: `bundle exec rake test`
 
 run acceptance tests: `bundle exec rake acceptance`
+( vagrant and virtualbox are required to run this)
 
 ###Vagrant
 
