@@ -1,5 +1,5 @@
 # puppet-ejabberd
-test
+
 [![Build Status](https://travis-ci.org/endocode/puppet-ejabberd.svg?branch=master)](https://travis-ci.org/endocode/puppet-ejabberd)
 
 Puppet module for deploying an ejabberd instance.
