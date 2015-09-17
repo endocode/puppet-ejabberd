@@ -40,5 +40,6 @@ running `vagrant up` creates a debian wheezy and ubuntu trusty box.
 
 ## Requirements
 
-ruby > 1.9.0
-puppet > 3.0
+* ruby >= 1.9.3
+* puppet >= 3.1.1
+-> See travis ci build matrix for more.
